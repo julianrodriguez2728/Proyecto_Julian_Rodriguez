@@ -1,0 +1,668 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #585858;
+    font-family: 'Quicksand', sans-serif;;
+}
+#fondo{
+    padding-bottom: 800px ; 
+}
+/* Responsive */
+/* desktops */
+
+@media (min-width: 1200px){
+    #areas{
+       display: grid;
+       grid-template-areas: 
+       "cabeza cabeza"
+       "fondo  fondo"
+       "menu fotos"
+       "footer footer"
+                ;
+       grid-template-columns: 10% auto ;
+       grid-template-rows: 1fr 3fr  3fr 1fr ;
+   }
+
+
+header{
+   grid-area: cabeza;
+}
+
+#fondo{
+   grid-area: fondo;
+}
+
+#areaimg{
+   grid-area: fotos;
+}
+
+nav{
+   grid-area: menu;
+}
+
+footer{
+   grid-area: footer;
+}
+
+
+    /* header*/
+
+.titulo img{
+    height: 90px;
+    margin-right: 15px  ;
+}
+
+.titulo h1{
+    font-size: 50px;
+    color: rgb(226, 220, 220);
+    font-family: 'Rock Salt', cursive;;
+}
+
+.titulo{
+    background-color: #4f7381;
+}
+
+.tituloFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* /* menu  */
+
+
+.menuFlex{
+
+    background-color: #7fa99b;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.linkMenu{
+    font-size: 30px;
+    color: rgb(252, 247, 247);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;;
+}
+
+
+/* /* footer  */
+.uno{
+    background-color: #c9defa;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pie img{
+    height: 50px;
+}
+
+
+/* /* INDEX* */
+
+#fondo{ 
+    background-image: url(./img/fondo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fondo h2{
+    color: white;
+    text-align: center;
+}
+
+article img{
+    margin: 20px;
+    height: 200px;
+}
+
+article{
+    width: 50%;
+}
+.imgmenu{
+    display: flex;
+    justify-content: center;
+    
+}
+.imgmenu h3{
+    margin: 50px;
+    color: rgba(250, 250, 250, 0.932);
+    font-family: cursive;
+}
+h3{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* /* quienes somos* */
+.quienes-somos{
+    background-color: rgba(255, 255, 255, 0.774);
+    text-align: center;
+
+
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* /* ubiacion * */
+.mapa{
+    text-align: center;
+}
+.mapa p{
+    color: white;
+    font-size: 20px;
+}
+/* /* Comidas * */
+#imagen-comida img{
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+#imagen-comida{ 
+    text-align: center;
+    background: rgba(255, 253, 253, 0.493);
+    padding: 0;
+    margin: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+cite{
+    font-size: 30px;
+    font-family: 'Rock Salt', cursive;
+}
+/* Postres */
+#postres img{
+    max-width: 500px;
+    padding: 0;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+#postres{
+    text-align: center;
+    background: rgba(255, 253, 253, 0.493);
+    padding: 20px;
+    margin: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* vegetariano */
+.vegetariano img{
+    max-width: 500px;
+    padding: 0;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.vegetariano{
+    background: rgba(255, 253, 253, 0.493);
+    padding: 20px;
+    margin: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+/* Tablets */
+@media (min-width: 481px)and (max-width: 1023px){
+    #areas{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "fondo"
+        "fotos"
+        "footer"
+                 ;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+ 
+        grid-column-gap: 10px;
+        grid-row-gap:  5px;
+   }
+   .border{
+    border: 1px solid black; 
+    }
+    
+    header{
+       grid-area: header;
+    }
+    
+    #fondo{
+       grid-area: fondo;
+    }
+    
+    #areaimg{
+       grid-area: fotos;
+    }
+    
+    nav{
+       grid-area: menu;
+    }
+    
+    footer{
+       grid-area: footer;
+    }
+    
+}  
+    /* header*/
+
+.titulo img{
+    height: 90px;
+    margin-right: 15px  ;
+}
+
+.titulo h1{
+    font-size: 50px;
+    color: rgb(226, 220, 220);
+    font-family: 'Rock Salt', cursive;;
+}
+
+.titulo{
+    background-color: #4f7381;
+}
+
+.tituloFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* /* menu  */
+
+
+.menuFlex{
+
+    background-color: #7fa99b;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.linkMenu{
+    font-size: 30px;
+    color: rgb(252, 247, 247);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;;
+}
+
+
+/* /* footer  */
+footer{
+    background-color: #c9defa;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+footer img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pie img{
+    height: 50px;
+}
+
+
+/* /* INDEX* */
+
+#fondo{ 
+    background-image: url(./img/fondo3.jpg);
+    background-position: center;
+    background-attachment: fixed;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fondo h2{
+    color: white;
+    text-align: center;
+}
+
+article img{
+    margin: 20px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+article{
+    width: 50%;
+}
+.imgmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.imgmenu h3{
+    margin: 50px;
+    color: rgba(250, 250, 250, 0.932);
+    font-family: cursive;
+}
+h3{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* /* quienes somos* */
+.quienes-somos{
+    background-color: rgba(255, 255, 255, 0.774);
+    text-align: center;
+
+
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* /* ubiacion * */
+.mapa{
+    text-align: center;
+}
+.mapa p{
+    color: white;
+    font-size: 20px;
+}
+/* /* Comidas * */
+#imagen-comida img{
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+#imagen-comida{ 
+    text-align: center;
+    background: rgba(255, 253, 253, 0.493);
+    padding: 0;
+    margin: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+cite{
+    font-size: 30px;
+    font-family: 'Rock Salt', cursive;
+}
+/* Postres */
+#postres img{
+    max-width: 500px;
+    padding: 0;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+#postres{
+    text-align: center;
+    background: rgba(255, 253, 253, 0.493);
+    padding: 20px;
+    margin: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* vegetariano */
+.vegetariano img{
+    max-width: 500px;
+    padding: 0;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.vegetariano{
+    background: rgba(255, 253, 253, 0.493);
+    padding: 20px;
+    margin: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* smartphones */
+@media (max-width: 480px){
+    #areas{
+       display: grid;
+       grid-template-areas: 
+       "header"
+       "menu "
+       "fondo"
+       "fotos"
+       "footer"
+                ;
+       grid-template-columns: 100%;
+       grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+
+       grid-column-gap: 10px;
+       grid-row-gap:  5px;
+   }
+   .border{
+    border: 1px solid black; 
+    }
+    
+    header{
+       grid-area: header;
+    }
+    
+    #fondo{
+       grid-area: fondo;
+    }
+    
+    #areaimg{
+       grid-area: fotos;
+    }
+    
+    nav{
+       grid-area: menu;
+    }
+    
+    footer{
+       grid-area: footer;
+    }
+    .titulo img{
+        height: 90px;
+        margin-right: 15px  ;
+    }
+    
+    .titulo h1{
+        font-size: 50px;
+        color: rgb(226, 220, 220);
+        font-family: 'Rock Salt', cursive;;
+    }
+    
+    .titulo{
+        background-color: #4f7381;
+    }
+    
+    .tituloFlex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*menu*/
+    
+    
+    .menuFlex{
+        background-color: #7fa99b;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .linkMenu{
+        margin: 20px;
+        font-size: 30px;
+        color: rgb(252, 247, 247);
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;;
+    }
+    
+    
+    /* /* footer  */
+    footer{
+        background-color: #c9defa;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    
+    /* /* INDEX* */
+    
+    #fondo{ 
+        background-image: url(./img/fondo3.jpg);
+        background-position: center;  
+    }
+    
+    #fondo h2{
+        color: white;
+        text-align:center ;
+    }
+    
+    article img{
+        margin: 10px;
+        height: 100px;
+        width: 200px;
+        border-radius: 10%;
+    }
+    
+    article{
+        width: 50%;
+    }
+    .imgmenu{
+        display: flex;
+        flex-wrap: nowrap;  
+        align-items: center;  
+        flex-direction: column;
+        
+    }
+    .imgmenu h3{
+        margin: 10px;
+        color: rgba(250, 250, 250, 0.932);
+        font-family: cursive;
+    }
+    h3{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    /* /* quienes somos* */
+    .quienes-somos{
+        background-color: rgba(255, 255, 255, 0.774);
+        text-align: center;
+    
+    
+        margin: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* /* ubiacion * */
+    .mapa{
+        text-align: center;
+    }
+    .mapa p{
+        color: white;
+        font-size: 20px;
+    }
+    /* /* Comidas * */
+    #imagen-comida img{
+        max-width: 100px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    #imagen-comida{ 
+        text-align: center;
+        background: rgba(255, 253, 253, 0.493);
+        padding: 0;
+        margin: 40px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    cite{
+        font-size: 30px;
+        font-family: 'Rock Salt', cursive;
+    }
+    /* Postres */
+    #postres img{
+        max-width: 100px;
+        padding: 0;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    #postres{
+        text-align: center;
+        background: rgba(255, 253, 253, 0.493);
+        padding: 20px;
+        margin: 40px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* vegetariano */
+    .vegetariano img{
+        max-width: 100px;
+        padding: 0;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .vegetariano{
+        background: rgba(255, 253, 253, 0.493);
+        padding: 20px;
+        margin: 40px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
