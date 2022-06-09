@@ -136,7 +136,7 @@ footer{
     grid-template-rows: 100% 100%;
 }
 .imagenes{
-    background-image: url(https://img.freepik.com/foto-gratis/mesa-vacia-mantel-fondo-cocina-borrosa_34168-11.jpg?size=626&ext=jpg);
+    background-image: url(./img/fondo\ cocina.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
