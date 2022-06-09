@@ -20,10 +20,10 @@ body{
        display: grid;
        grid-template-areas: 
        "cabeza cabeza"
-       "fondo  fondo"
+       "menu fondo"
        "menu fotos"
        "footer footer";
-       grid-template-columns: 20% 80% ;
+       grid-template-columns: 15% auto ;
        grid-template-rows: 1fr 3fr  3fr 1fr ;
    }
 
@@ -212,9 +212,8 @@ footer{
 }
 .mapa iframe{
  height: 600px;
- width: 1500px;
- margin-left: 400px;
- margin-right: 700px;
+ width: 800px;
+  
 }
 /* /* Comidas * */
 #imagen-comida img{
