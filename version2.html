@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adelina´s</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <!-- estilos generales -->
     <link rel="stylesheet" href="estilos2.css">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
@@ -17,36 +20,46 @@
         </div>
    </header> 
    <section id="fondo">
-    <a href="#areaimg" class="linkMenu"><h2>ver mas</h2></a>
+    <a href="#abajo" class="linkMenu"><h2>ver mas</h2></a>
  </section>
  <section id="container" class="border imgmenu">
-  <div  class="flex">
-      <div class="imagenes transicion">
-          <button class="comid btn"><a href="./PAGINAS/comida.html">Comidas</a></button>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/originals/c5/42/1d/c5421db12866ead7d1f9e7aba1e97b6a.jpg" class="d-block w-100 " alt="vegetariano">
+            <a href="./PAGINAS/comida.html"><button class="boton-menu" >comidas</button></a>
           </div>
-      <div class="imagenes transicion ">
-          <button class="veget btn"><a href="./PAGINAS/vege.html">Vegetariano</a></button>
+          <div class="carousel-item">
+            <img src="./img/sandwich-garbanzo-picadillo-vegano-sin-carne-recetas.jpg" class="d-block w-100" alt="comidas">
+            <a href="./PAGINAS/vege.html"><button class="boton-menu" >vegetariano</button></a>
           </div>
-  </div>
-  <div class="flex">
-       <div class="imagenes transicion">
-          <button class="Postres btn"><a href="./PAGINAS/postres.html">Postres </a></button>
+          <div class="carousel-item">
+            <img src="https://i.blogs.es/948245/mousse_yogur/840_560.jpg" class="d-block w-100" alt="cheesck">
+            <a href="./PAGINAS/postres.html"><button class="boton-menu" >Postres</button></a>
           </div>
-       <div class="imagenes transicion">
-          <button class="Local btn"><a href="./PAGINAS/ubicacion.html">Localidad</a></button>
-          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
   </div>
  </section>
- <nav class="border menuFlex 1 2 3">
+ <nav class="border menuFlex">
      <a class="linkMenu transf-menu" href="./version2.html">Inicio</a>
      <a class="linkMenu transf-menu" href="./PAGINAS/quienes_somos.html">¿Quienes Somos?</a>
      <a class="linkMenu transf-menu" href="./PAGINAS/ubicacion.html">Localidad</a>
      <a class="linkMenu transf-menu" href="./PAGINAS/comida.html">Comidas</a>
  </nav>
-   <footer class="border pie uno dos tres">
+   <footer id="abajo" class="border pie uno dos tres">
     <a href="https://www.facebook.com/adelina.sanchez.7902" target="_blank"><img src="../PROYECTO Julian Rodriguez/img/facebook.png " alt="logos"></a>
     <a href="https://www.instagram.com/adelinasbyns/" target="_blank"><img src="../PROYECTO Julian Rodriguez/img/instagram.png" alt="logos"></a>
     <a href="#" target="_blank"><img src="../PROYECTO Julian Rodriguez/img/telefono.png" alt="logos"></a>
    </footer>
+   <script src="./bootstrap/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </body>
 </html>

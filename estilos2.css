@@ -1,3 +1,4 @@
+                /* Estilos Generales */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -13,8 +14,8 @@ body{
     padding-bottom: 800px ; 
 }
 
-/* Responsive */
-/* desktops */
+                /* Responsive */
+    /* desktops */
 @media screen and (min-width: 1023px){
     #areas{
        display: grid;
@@ -49,7 +50,7 @@ footer{
 }
 
 
-    /* header*/
+/* header*/
 
 .titulo img{
     height: 90px;
@@ -131,53 +132,30 @@ footer{
 }
 #container{
     background-color: rgb(12, 170, 144);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100% 100%;
-}
-.imagenes{
-    background-image: url(./img/fondo\ cocina.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:200px;
-    width: 300px;
-    margin: 20px;
-    display: flex;
+    display:flex; 
     justify-content: center;
-    align-items: center;
-    border-radius: 20px;
 }
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+/* bootstrap */
+.carousel{
+    max-width: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
-.transicion{
-    transition: all 0.5s;
+.carousel img{
+    max-width: 600px;
+    min-height: 400px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
-.transicion:hover{
-    width: 500px;
-    height: 250px;
-    background-image:linear-gradient( rgba(16, 16,16,.8), rgba(16, 16,16, .8)) url(https://img.freepik.com/foto-gratis/mesa-vacia-mantel-fondo-cocina-borrosa_34168-11.jpg?size=626&ext=jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.btn{
+.carousel ,.boton-menu{
     font-size: 2em;
-    background: none;
-    color: rgb(0, 0, 0);
+    background: black;
+    color: rgb(63, 238, 156);
     padding: 20px;
     border-radius: 30px;
+    text-align: center;
 }
-.btn a{
-    text-decoration: none;
-    color: black;
-}
-.btn a:hover{
-    color: rgb(12, 170, 144);
+.carousel ,.boton-menu:hover{
+    color: rgb(238, 255, 0);
 }
 /* /* quienes somos* */
 .quienes-somos{
@@ -281,7 +259,8 @@ cite{
 
 }
 
-/* Tablets */
+
+                /* Tablets */
 @media screen and (max-width: 480px),(max-width: 1023px){
     #areas{
         display: grid;
@@ -410,49 +389,23 @@ footer img{
     grid-template-columns: 50% 50%;
     grid-template-rows: 100% 100%;
 }
-.imagenes{
-    background-image: url(https://img.freepik.com/foto-gratis/mesa-vacia-mantel-fondo-cocina-borrosa_34168-11.jpg?size=626&ext=jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:200px;
-    width: 300px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+.carousel{
+    width: 100%;
+
 }
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.carousel img{
+    width: 100%;
 }
-.transicion{
-    transition: all 0.5s;
-}
-.transicion:hover{
-    width: 500px;
-    height: 250px;
-    background-image:linear-gradient( rgba(16, 16,16,.8), rgba(16, 16,16, .8)) url(https://img.freepik.com/foto-gratis/mesa-vacia-mantel-fondo-cocina-borrosa_34168-11.jpg?size=626&ext=jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.btn{
+.carousel ,.boton-menu{
     font-size: 2em;
-    background: none;
-    color: rgb(0, 0, 0);
+    background: black;
+    color: rgb(63, 238, 156);
     padding: 20px;
     border-radius: 30px;
+    text-align: center;
 }
-.btn a{
-    text-decoration: none;
-    color: black;
-}
-.btn a:hover{
-    color: rgb(12, 170, 144);
+.carousel ,.boton-menu:hover{
+    color: rgb(238, 255, 0);
 }
 /* /* quienes somos* */
 .quienes-somos{
@@ -532,7 +485,10 @@ cite{
 }
 }
 
-/* smartphones */
+
+
+            /* smartphones */
+            
 @media screen and  (max-width: 480px){
     #areas{
        display: grid;
@@ -646,50 +602,17 @@ cite{
         grid-template-columns: 50% 50%;
         grid-template-rows: 100% 100%;
     }
-    .imagenes{
-        background-image: url(https://img.freepik.com/foto-gratis/mesa-vacia-mantel-fondo-cocina-borrosa_34168-11.jpg?size=626&ext=jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height:200px;
-        width: 200px;
-        margin: 20px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-    }
-    .flex{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .transicion{
-        transition: all 0.5s;
-    }
-    .transicion:hover{
-        width: 200px;
-        height: 250px;
-        background-image:linear-gradient( rgba(16, 16,16,.8), rgba(16, 16,16, .8)) url(https://img.freepik.com/foto-gratis/mesa-vacia-mantel-fondo-cocina-borrosa_34168-11.jpg?size=626&ext=jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .btn{
-        font-size: 2em;
-        background: none;
-        color: rgb(0, 0, 0);
+    .carousel ,.boton-menu{
+        width: 100%;
+        font-size: 1em;
+        background: black;
+        color: rgb(63, 238, 156);
         padding: 10px;
-        border-radius: 20px;
+        border-radius: 30px;
+        text-align: center;
     }
-    .btn a{
-        text-decoration: none;
-        color: black;
-    }
-    .btn a:hover{
-        color: rgb(12, 170, 144);
+    .carousel ,.boton-menu:hover{
+        color: rgb(238, 255, 0);
     }
     /* /* quienes somos* */
     .quienes-somos{
