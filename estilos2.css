@@ -313,10 +313,21 @@ cite{
     
     /* header*/
 
-.titulo img{
-    height: 90px;
-    margin-right: 15px  ;
-}
+    .titulo img{
+        height: 90px;
+        margin-right: 15px ;
+        animation: saltar 4s infinite;
+        animation-name: saltar;
+    }
+    @keyframes saltar {
+        from{
+            transform: translateY(10px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    
 
 .titulo h1{
     font-size: 50px;
@@ -538,10 +549,22 @@ cite{
     footer{
        grid-area: footer;
     }
+    /* header */
     .titulo img{
         height: 90px;
-        margin-right: 15px  ;
+        margin-right: 15px ;
+        animation: saltar 4s infinite;
+        animation-name: saltar;
     }
+    @keyframes saltar {
+        from{
+            transform: translateY(10px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    
     
     .titulo h1{
         font-size: 50px;
