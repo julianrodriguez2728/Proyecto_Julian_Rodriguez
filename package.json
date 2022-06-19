@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-julian-rodriguez",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianrodriguez2728/Proyecto_Julian_Rodriguez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianrodriguez2728/Proyecto_Julian_Rodriguez/issues"
+  },
+  "homepage": "https://github.com/julianrodriguez2728/Proyecto_Julian_Rodriguez#readme",
+  "description": ""
+}
