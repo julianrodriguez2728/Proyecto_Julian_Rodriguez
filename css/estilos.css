@@ -114,7 +114,7 @@ body {
   }
   /*  bootstrap   */
   #container {
-    background-color: rgb(12, 170, 144);
+    background-color: #7fa99b;
     display: flex;
     justify-content: center;
   }
@@ -127,7 +127,7 @@ body {
     min-height: 400px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   }
-  #container .carousel .boton-menu {
+  #container .carousel, #container .boton-menu {
     font-size: 2em;
     background: black;
     color: rgb(63, 238, 156);
@@ -135,7 +135,256 @@ body {
     border-radius: 30px;
     text-align: center;
   }
-  #container .carousel .boton-menu:hover {
+  #container .carousel:hover, #container .boton-menu:hover {
+    color: rgb(238, 255, 0);
+  }
+}
+/* Tablets */
+@media screen and (max-width: 480px), (max-width: 1023px) {
+  #areas {
+    display: grid;
+    grid-template-areas: "header" "menu" "fondo" "fotos" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+  }
+  .border {
+    border: 1px solid black;
+  }
+  header {
+    grid-area: header;
+  }
+  #fondo {
+    grid-area: fondo;
+  }
+  #areaimg {
+    grid-area: fotos;
+  }
+  nav {
+    grid-area: menu;
+  }
+  footer {
+    grid-area: footer;
+  }
+  /* header*/
+  .titulo {
+    background-color: #4f7381;
+  }
+  .titulo .tituloFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulo .tituloFlex img {
+    height: 90px;
+    margin-right: 15px;
+    animation: saltar 4s infinite;
+    animation-name: saltar;
+  }
+  @keyframes saltar {
+    from {
+      transform: translateY(10px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
+  .titulo .tituloFlex h1 {
+    font-size: 50px;
+    color: rgb(226, 220, 220);
+    font-family: "Rock Salt", cursive;
+  }
+  /* menu  */
+  .menuFlex {
+    background-color: #7fa99b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .menuFlex .transf-menu {
+    transition: all 0.2s;
+  }
+  .menuFlex .transf-menu:hover {
+    font-size: 40px;
+  }
+  .menuFlex .linkMenu {
+    font-size: 30px;
+    color: rgb(252, 247, 247);
+    text-decoration: none;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+  }
+  /* footer */
+  .uno {
+    background-color: #c9defa;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .uno img {
+    height: 50px;
+  }
+  /* /* INDEX* */
+  #fondo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/fondo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #fondo h2 {
+    color: white;
+    text-align: center;
+  }
+  /*BOOTSTRAP*/
+  #container {
+    background-color: #7fa99b;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100%;
+  }
+  #container .carousel {
+    width: 100%;
+  }
+  #container .carousel img {
+    width: 100%;
+  }
+  .carousel, .boton-menu {
+    font-size: 2em;
+    background: black;
+    color: rgb(63, 238, 156);
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+  }
+  .carousel:hover, .boton-menu:hover {
+    color: rgb(238, 255, 0);
+  }
+}
+/* smartphones */
+@media screen and (max-width: 480px) {
+  #areas {
+    display: grid;
+    grid-template-areas: "header" "menu " "fondo" "fotos" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+  }
+  .border {
+    border: 1px solid black;
+  }
+  header {
+    grid-area: header;
+  }
+  #fondo {
+    grid-area: fondo;
+  }
+  #areaimg {
+    grid-area: fotos;
+  }
+  nav {
+    grid-area: menu;
+  }
+  footer {
+    grid-area: footer;
+  }
+  /* header */
+  .titulo {
+    background-color: #4f7381;
+  }
+  .titulo .tituloFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .titulo .tituloFlex img {
+    height: 90px;
+    margin-right: 15px;
+    animation: saltar 4s infinite;
+    animation-name: saltar;
+  }
+  @keyframes saltar {
+    from {
+      transform: translateY(10px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
+  .titulo .tituloFlex h1 {
+    font-size: 50px;
+    color: rgb(226, 220, 220);
+    font-family: "Rock Salt", cursive;
+  }
+  /*menu*/
+  .menuFlex {
+    background-color: #7fa99b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .menuFlex .transf-menu {
+    transition: all 0.2s;
+  }
+  .menuFlex .transf-menu:hover {
+    font-size: 40px;
+  }
+  .menuFlex .linkMenu {
+    margin: 20px;
+    font-size: 30px;
+    color: rgb(252, 247, 247);
+    text-decoration: none;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+  }
+  /* /* footer  */
+  .uno {
+    background-color: #c9defa;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .uno img {
+    height: 50px;
+  }
+  /* INDEX* */
+  #fondo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/fondo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #fondo h2 {
+    color: white;
+    text-align: center;
+  }
+  /*bootstrap*/
+  #container {
+    background-color: #7fa99b;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100%;
+  }
+  .carousel, .boton-menu {
+    width: 100%;
+    font-size: 1em;
+    background: black;
+    color: rgb(63, 238, 156);
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+  }
+  .carousel, .boton-menu:hover {
     color: rgb(238, 255, 0);
   }
 }
