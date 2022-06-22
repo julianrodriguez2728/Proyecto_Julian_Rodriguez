@@ -41,25 +41,25 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
+        .logo{
             height: 90px;
             margin-right: 15px ;
             animation: saltar 4s infinite;
             animation-name: saltar;
-        }
-        @keyframes saltar {
-            from{
-                transform: translateY(10px);
-            }
-            to{
-                transform: translateX(0px);
-            }
         }
         h1{
             font-size: 50px;
             color: $color-titulo;
             font-family: 'Rock Salt', cursive;
         }
+    }
+}
+@keyframes saltar {
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateX(0px);
     }
 }
 
@@ -298,18 +298,8 @@ footer{
             justify-content: center;
             align-items: center;
             img{
-                height: 90px;
-                margin-right: 15px ;
-                animation: saltar 4s infinite;
-                animation-name: saltar;
-            }
-            @keyframes saltar {
-                from{
-                    transform: translateY(10px);
-                }
-                to{
-                    transform: translateX(0px);
-                }
+               @extend .logo;
+               height: 50px;
             }
             h1{
                 font-size: 50px;
@@ -318,7 +308,14 @@ footer{
             }
         }
     }
-    
+ @keyframes saltar {
+        from{
+            transform: translateY(10px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }    
  /* menu  */
 
  .menuFlex{
@@ -525,18 +522,8 @@ footer{
             justify-content: center;
             align-items: center;
             img{
-                height: 90px;
-                margin-right: 15px ;
-                animation: saltar 4s infinite;
-                animation-name: saltar;
-            }
-            @keyframes saltar {
-                from{
-                     transform: translateY(10px);
-                 }
-                 to{
-                     transform: translateX(0px);
-                 }
+                @extend .logo;
+                height: 30px;
             }
             h1{
                 font-size: 50px;
@@ -545,7 +532,14 @@ footer{
             }    
         }
     }
-    
+@keyframes saltar {
+        from{
+             transform: translateY(10px);
+         }
+         to{
+             transform: translateX(0px);
+         }
+    }  
     /*menu*/
    
      .menuFlex{
