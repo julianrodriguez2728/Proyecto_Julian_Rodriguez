@@ -41,7 +41,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        .logo{
+        img{
             height: 90px;
             margin-right: 15px ;
             animation: saltar 4s infinite;
@@ -144,111 +144,114 @@ footer{
     }
 }
 
+ /*quienes somos*/
+.quienes-somos{
+     background-color: rgba(255, 255, 255, 0.774);
+     text-align: center;
 
+
+     margin: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     p{
+        font-size: 20px;
+     }
+ }
+ /* ubicacion */
+.mapa{
+     text-align: center;
+     p{
+        color: white;
+        font-size: 50px;
+    }
+    iframe{
+        height: 600px;
+        width: 800px;
+        
+       }
+ }
+ /* Comidas */
+.comidas{
+    max-width: 960px;
+    margin: 0 auto;
+    #imagen-comida{
+        background-image: linear-gradient( $fondo-header, $fondo-menu, $fondo-menu );
+        padding: 100px; 
+        border-radius: 20px; 
+        margin-top: 20px; 
+        margin-bottom: 100px;
+        text-align: center;
+        display: grid;
+        .caja-uno{
+            max-width: 500px;
+            height: auto;
+            border: solid 4px rgb(0, 132, 255);
+            margin-left: 100px;
+            display: block;
+        }
+        .caja-dos{
+            @extend .caja-uno;
+            border: solid 4px rgb(15, 192, 133);
+        }
+        .caja-tres{
+            @extend .caja-uno;
+            border: solid 4px rgb(75, 7, 75);
+        }
+        .caja-cuatro{
+            @extend .caja-uno;
+            max-width: 600px;
+            border: solid 4px yellow;
+        }
+        cite{
+            font-size: 20px;
+            margin: 20px;
+        }
+    }
 }
-// /* /* quienes somos
-// .quienes-somos{
-//     background-color: rgba(255, 255, 255, 0.774);
-//     text-align: center;
+ /* Postres */
+#postres{
+     text-align: center;
+     background-image: linear-gradient( #4f7381b4, #7fa99b8a, #7fa99b63 );
+     padding: 20px;
+     margin: 40px;
+     border-radius: 20;
 
+     display: flex;
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-items: center;
+     img{
+        max-width: 500px;
+        padding: 0;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+ }
+ /* vegetariano */
+.vegetariano{
+    background-image: linear-gradient( #4f7381d7, #7fa99bc0, #7fa99bb0 );
+    padding: 20px;
+    margin: 40px;
+    border-radius: 50px;
 
-//     margin: 40px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-// }
-// .uno{
-//     background-color: #c9defa;
-
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-around;
-// }
-
-// .pie img{
-//     height: 50px;
-// }
-// /* /* ubiacion * */
-// .mapa{
-//     text-align: center;
-// }
-// .mapa p{
-//     color: white;
-//     font-size: 50px;
-// }
-// .mapa iframe{
-//  height: 600px;
-//  width: 800px;
-  
-// }
-// /* /* Comidas * */
-// #imagen-comida img{
-//     max-width: 500px;
-//     height: auto;
-//     margin: 0 auto;
-//     display: block;
-// }
-// #imagen-comida{ 
-//     text-align: center;
-//     background: rgba(255, 253, 253, 0.493);
-//     padding: 0;
-//     margin: 40px;
-
-//     background-color: rgba(255, 255, 255, 0.774);
-//     text-align: center;
-
-
-//     margin: 40px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column-reverse;
-// }
-// cite{
-//     font-size: 30px;
-//     font-family: 'Rock Salt', cursive;
-// }
-// /* Postres */
-// #postres img{
-//     max-width: 500px;
-//     padding: 0;
-//     height: auto;
-//     margin: 0 auto;
-//     display: block;
-// }
-// #postres{
-//     text-align: center;
-//     background: rgba(255, 253, 253, 0.493);
-//     padding: 20px;
-//     margin: 40px;
-
-//     display: flex;
-//     flex-direction: column-reverse;
-//     justify-content: center;
-//     align-items: center;
-// }
-// /* vegetariano */
-// .vegetariano img{
-//     max-width: 500px;
-//     padding: 0;
-//     height: auto;
-//     margin: 0 auto;
-// }
-// .vegetariano{
-//     background: rgba(255, 253, 253, 0.493);
-//     padding: 20px;
-//     margin: 40px;
-
-//     display: flex;
-//     flex-direction: column-reverse;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// }
-
-
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-width: 500px;
+        padding: 0;
+        height: auto;
+        margin: 0 auto;
+    }
+    cite{
+        color: $link-menu;
+    }
+ }
+}
                 /* Tablets */
  @media screen and (max-width: 480px),(max-width: 1023px){
      #areas{
@@ -298,8 +301,10 @@ footer{
             justify-content: center;
             align-items: center;
             img{
-               @extend .logo;
-               height: 50px;
+                height: 90px;
+                margin-right: 15px ;
+                animation: saltar 4s infinite;
+                animation-name: saltar;
             }
             h1{
                 font-size: 50px;
@@ -392,86 +397,90 @@ footer{
      }
  }
 
+
+ /* quienes somos*/
+ .quienes-somos{
+     background-color: rgba(255, 255, 255, 0.774);
+     text-align: center;
+
+
+     margin: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     p{
+        font-size: 20px;
+     }
+ }
+ /*  ubicacion  */
+ .mapa{
+     text-align: center;
+     p{
+        color: white;
+        font-size: 20px;
+    }
+ }
+ 
+ /*  Comidas  */
+.comidas{
+    max-width: 500px;
+    margin: 0 auto;
+    #imagen-comida{
+        background-image: linear-gradient( $fondo-header, $fondo-menu, $fondo-menu );
+        padding: 50px; 
+        border-radius: 20px; 
+        margin-top: 20px; 
+        margin-bottom: 100px;
+        text-align: center;
+        display: grid;
+        .tablet{
+            max-width: 300px;
+            height: auto;
+            border: solid 4px rgb(0, 132, 255);
+            margin-left: 50px;
+            display: block;
+    }
 }
-// /* /* quienes somos* */
-// .quienes-somos{
-//     background-color: rgba(255, 255, 255, 0.774);
-//     text-align: center;
+}
 
+ /* Postres */
+#postres{
+     text-align: center;
+     background-image: linear-gradient( $fondo-header, $fondo-menu, $fondo-menu );
+     padding: 20px;
+     margin: 40px;
 
-//     margin: 40px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-// }
-// /* /* ubiacion * */
-// .mapa{
-//     text-align: center;
-// }
-// .mapa p{
-//     color: white;
-//     font-size: 20px;
-// }
-// /* /* Comidas * */
-// #imagen-comida img{
-//     max-width: 500px;
-//     height: auto;
-//     margin: 0 auto;
-//     display: block;
-// }
-// #imagen-comida{ 
-//     text-align: center;
-//     background: rgba(255, 253, 253, 0.493);
-//     padding: 0;
-//     margin: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     img{
+        max-width: 300px;
+        padding: 0;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+ }
+ /* vegetariano */
 
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-// cite{
-//     font-size: 30px;
-//     font-family: 'Rock Salt', cursive;
-// }
-// /* Postres */
-// #postres img{
-//     max-width: 500px;
-//     padding: 0;
-//     height: auto;
-//     margin: 0 auto;
-//     display: block;
-// }
-// #postres{
-//     text-align: center;
-//     background: rgba(255, 253, 253, 0.493);
-//     padding: 20px;
-//     margin: 40px;
-
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-// /* vegetariano */
-// .vegetariano img{
-//     max-width: 500px;
-//     padding: 0;
-//     height: auto;
-//     margin: 0 auto;
-//     display: block;
-// }
-// .vegetariano{
-//     background: rgba(255, 253, 253, 0.493);
-//     padding: 20px;
-//     margin: 40px;
-
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-// }
-
-
+.vegetariano{
+    
+    padding: 20px;
+    margin: 40px;
+    background-image: linear-gradient( $fondo-header, $fondo-menu, $fondo-menu );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-width: 300px;
+        padding: 0;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}
+}
 
              /* smartphones */
             
@@ -522,8 +531,10 @@ footer{
             justify-content: center;
             align-items: center;
             img{
-                @extend .logo;
-                height: 30px;
+                height: 90px;
+                margin-right: 15px ;
+                animation: saltar 4s infinite;
+                animation-name: saltar;
             }
             h1{
                 font-size: 50px;
@@ -613,88 +624,89 @@ footer{
      .carousel ,.boton-menu:hover{
          color: $carrousel-boton;
      }
+     /* /* quienes somos* */
+     .quienes-somos{
+         background-color: rgba(255, 255, 255, 0.774);
+         text-align: center;
+    
+    
+         margin: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         p{
+            font-size: 20px;
+         }
+     }
+     /* /* ubicacion * */
+     .mapa{
+         text-align: center;
+         p{
+            color: white;
+            font-size: 20px;
+        }
+        iframe{
+            height: 600px;
+            width: 100%;              
+       }
+     }
+     /* Comidas */
+ .comidas{
+        max-width: 500px;
+        margin: 0 auto;
+        #imagen-comida{
+            background-image: linear-gradient( $fondo-header, $fondo-menu, $fondo-menu );
+            padding: 50px; 
+            border-radius: 20px; 
+            margin-top: 20px; 
+            margin-bottom: 100px;
+            text-align: center;
+            display: grid;
+            .tablet{
+                max-width: 200px;
+                height: auto;
+                border: solid 4px rgb(0, 132, 255);
+                margin-left: 50px;
+                display: block;
+        }
     }
-//     /* /* quienes somos* */
-//     .quienes-somos{
-//         background-color: rgba(255, 255, 255, 0.774);
-//         text-align: center;
+    }
+     /* Postres */
+     #postres{
+        text-align: center;
+        background-image: linear-gradient( $fondo-header, $fondo-menu, $fondo-menu );
+        padding: 20px;
+        margin: 40px;
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+           max-width: 200px;
+           padding: 0;
+           height: auto;
+           margin: 0 auto;
+           display: block;
+       }
+    }
+     /* vegetariano*/
+     .vegetariano{
     
-    
-//         margin: 40px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         flex-direction: column;
-//     }
-//     /* /* ubiacion * */
-//     .mapa{
-//         text-align: center;
-//     }
-//     .mapa p{
-//         color: white;
-//         font-size: 20px;
-//     }
-//     iframe{
-//         height: 600px;
-//         width: 100%;
-//     }
-//     /* /* Comidas * */
-//     #imagen-comida img{
-//         max-width: 100px;
-//         height: auto;
-//         margin: 0 auto;
-//         display: block;
-//     }
-//     #imagen-comida{ 
-//         text-align: center;
-//         background: rgba(255, 253, 253, 0.493);
-//         padding: 0;
-//         margin: 40px;
-    
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     }
-//     cite{
-//         font-size: 30px;
-//         font-family: 'Rock Salt', cursive;
-//     }
-//     /* Postres */
-//     #postres img{
-//         max-width: 100px;
-//         padding: 0;
-//         height: auto;
-//         margin: 0 auto;
-//         display: block;
-//     }
-//     #postres{
-//         text-align: center;
-//         background: rgba(255, 253, 253, 0.493);
-//         padding: 20px;
-//         margin: 40px;
-    
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     }
-//     /* vegetariano 
-//     .vegetariano img{
-//         max-width: 100px;
-//         padding: 0;
-//         height: auto;
-//         margin: 0 auto;
-//         display: block;
-//     }
-//     .vegetariano{
-//         background: rgba(255, 253, 253, 0.493);
-//         padding: 20px;
-//         margin: 40px;
-    
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     }
-    
-// }
+        padding: 20px;
+        margin: 40px;
+        background-image: linear-gradient( $fondo-header, $fondo-menu, $fondo-menu );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 100px;
+            padding: 0;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+ }
 
 
