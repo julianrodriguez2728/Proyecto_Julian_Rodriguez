@@ -92,6 +92,16 @@ body {
     font-family: "Quicksand", sans-serif;
   }
   /*  footer  */
+  /*MAPS*/
+  .facebook {
+    background-color: rgb(97, 97, 148);
+  }
+  .instagram {
+    background-color: rgb(191, 146, 212);
+  }
+  .telefono {
+    background-color: rgb(161, 199, 183);
+  }
   .uno {
     background-color: #c9defa;
     display: flex;
@@ -156,6 +166,7 @@ body {
     font-size: 20px;
   }
   /* ubicacion */
+  /*MIXIN*/
   .mapa {
     text-align: center;
   }
@@ -180,6 +191,7 @@ body {
     margin-bottom: 100px;
     text-align: center;
     display: grid;
+    /*EXTEND*/
   }
   .comidas #imagen-comida .caja-uno, .comidas #imagen-comida .caja-cuatro, .comidas #imagen-comida .caja-tres, .comidas #imagen-comida .caja-dos {
     max-width: 500px;
@@ -216,10 +228,9 @@ body {
   }
   #postres img {
     max-width: 500px;
-    padding: 0;
     height: auto;
+    padding: 0;
     margin: 0 auto;
-    display: block;
   }
   /* vegetariano */
   .vegetariano {
