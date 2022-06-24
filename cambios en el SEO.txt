@@ -1,0 +1,36 @@
+INDEX
+Agregue en el index Principal las siguientes palabras claves:
+-comidas 
+-saludables
+-Comodoro
+-cocina
+
+COMIDAS
+-Section de comidas agregue las palabras clave:
+Comidas-menu ,saludables,cocina, comodoro
+-Cambie el titulo:"Comidas-Adelina´s"
+description:"Podes ver nuestro menu de comidas acá"
+
+POSTRES
+-section de postres agregue las palabras claves:
+postres ,saludables,cocina, comodoro
+-cambie el tittle:"Postres-Adelina´s"
+Description:"Podes ver aca nuestros postres saludables"
+
+QUIENES.SOMOS
+-section de quiene somos agregue las palabras claves: 
+quienes somos ,saludables,cocina, comodoro 
+-cambie el tittle por :"quienes somos-Adelina´s"
+-description:"Somos adelinas, una pagina donde te ofrecemos comida saludable"
+
+UBICACION
+-section de localidad agregue las palabras claves:
+ubicacion ,saludables,cocina, comodoro
+-cambie el title por:"Ubicacion-Adelina´s"
+-description:"Actualmente nos encontramos en comodoro rivadavia"
+
+VEGETARIANOS
+-section de vegetarianos agregue las palabras claves:
+Comida vegetariana ,saludables,cocina, comodoro
+-cambie el title por:Vegetarianos-Adelina´s
+-description:"podes ver nuestro menu para vegetarianos"
